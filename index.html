@@ -7130,7 +7130,7 @@
         <input id="btn_convert" type="button" value="Download Your Badge" />
 
         <br />
-        <h3>Preview :</h3>
+
         <div id="previewImg">
         </div>
     </center>
@@ -7154,8 +7154,8 @@
                     }).then(function (canvas) {
                         var anchorTag = document.createElement("a");
                         document.body.appendChild(anchorTag);
-                        document.getElementById("previewImg").appendChild(canvas);
-                        anchorTag.download = "filename.jpg";
+                        
+                        anchorTag.download = "FICOVA.jpg";
                         anchorTag.href = canvas.toDataURL();
                         anchorTag.target = '_blank';
                         anchorTag.click();
